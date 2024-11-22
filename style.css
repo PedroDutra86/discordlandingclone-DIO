@@ -1,0 +1,627 @@
+@import url(fonts.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+header {
+  background-image: url(images/Header\ Background.png);
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 94px 262px;
+  gap: 24px;
+}
+
+header h1 {
+  width: 312px;
+  font-family: "Luckiest Guy";
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+header p,
+header a {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.35rem;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.downloads {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.windows {
+  display: inline-block;
+  text-decoration: none;
+  color: #23272a;
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.navegador {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #23272a;
+  padding: 12px 24px;
+  border-radius: 28px;
+}
+
+.study-group {
+  height: 474px;
+  padding: 42px 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.ilustration {
+  flex-basis: 67%;
+  flex-grow: 2;
+  flex-shrink: 0;
+}
+
+.text {
+  flex-basis: 33%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text h3 {
+  font-size: 2.5rem;
+  line-height: 3.4rem;
+  font-weight: 800;
+  color: #23272a;
+}
+
+.text p {
+  color: #23272a;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+
+.just-chillin {
+  height: 448px;
+  background-color: #f6f6f6;
+  display: flex;
+  padding: 42px 156px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.coach {
+  height: 528px;
+  display: flex;
+  padding: 42px 156px;
+  justify-content: center;
+  align-items: center;
+}
+
+.last {
+  height: 744px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-last {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.text-last h1 {
+  width: 608px;
+  font-family: "Luckiest Guy";
+  text-transform: uppercase;
+  color: #23272a;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.text-last p {
+  font-size: 1rem;
+  line-height: 1.35rem;
+  color: #23272a;
+  text-align: center;
+  width: 802px;
+  font-weight: 400;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23272a;
+  width: 100%;
+  height: 134px;
+}
+
+@media screen and (max-width: 376px) {
+  .ilustration {
+    max-width: 328px;
+    max-height: 222px;
+  }
+
+  .text p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    overflow: hidden;
+  }
+  .last-img {
+    width: 90vw;
+  }
+  header {
+    height: 505px;
+    padding: 68px 24px;
+    background-size: cover;
+    background-position: center;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    width: 278px;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: start;
+  }
+
+  header p,
+  header a {
+    text-align: start;
+  }
+
+  .downloads {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .windows {
+    text-align: center;
+  }
+
+  .navegador {
+    text-align: center;
+  }
+
+  .study-group {
+    height: 573px;
+    padding: 38px 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .text h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    overflow: hidden;
+  }
+
+  .just-chillin {
+    height: 507px;
+    padding: 38px 24px;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  .coach {
+    height: 507px;
+    padding: 38px 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .coach p {
+    overflow: hidden;
+  }
+
+  .last {
+    height: 560px;
+    padding: 38px 24px;
+  }
+
+  .text-last h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 90vw;
+  }
+
+  .text-last p {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 377px) and (max-width: 428px) {
+  header {
+    height: 505px;
+    padding: 68px 24px;
+    background-size: cover;
+    background-position: center;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    width: 278px;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: start;
+  }
+
+  header p,
+  header a {
+    text-align: start;
+  }
+
+  .downloads {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .windows {
+    text-align: center;
+  }
+
+  .navegador {
+    text-align: center;
+  }
+
+  .study-group {
+    height: 573px;
+    padding: 38px 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .text h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    overflow: hidden;
+  }
+
+  .ilustration {
+    max-width: 378px;
+    max-height: 252px;
+  }
+
+  .just-chillin {
+    height: 507px;
+    padding: 38px 24px;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  .coach {
+    height: 507px;
+    padding: 38px 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .coach p {
+    overflow: hidden;
+  }
+
+  .last {
+    height: 560px;
+    padding: 38px 24px;
+  }
+
+  .text-last h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 90vw;
+  }
+
+  .text-last p {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 429px) and (max-width: 700px) {
+  header {
+    height: 505px;
+    padding: 68px 24px;
+    background-size: cover;
+    background-position: center;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    width: 278px;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: start;
+  }
+
+  header p,
+  header a {
+    text-align: start;
+  }
+
+  .downloads {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .windows {
+    text-align: center;
+  }
+
+  .navegador {
+    text-align: center;
+  }
+
+  .study-group {
+    height: 573px;
+    padding: 38px 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .text h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    overflow: hidden;
+  }
+
+  .ilustration {
+    max-width: 378px;
+    max-height: 252px;
+  }
+
+  .just-chillin {
+    height: 507px;
+    padding: 38px 24px;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  .coach {
+    height: 507px;
+    padding: 38px 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .coach p {
+    overflow: hidden;
+  }
+
+  .last {
+    height: 560px;
+    padding: 38px 24px;
+  }
+
+  .text-last h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 90vw;
+  }
+
+  .text-last p {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1109px) {
+  header {
+    height: 624px;
+    padding: 24px 36px;
+    background-size: cover;
+    background-position: center;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    width: 378px;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: start;
+  }
+
+  header p,
+  header a {
+    text-align: start;
+  }
+
+  .downloads {
+    flex-direction: row;
+    width: 90vw;
+  }
+
+  .windows {
+    text-align: center;
+    width: 40vw;
+    height: 64px;
+    align-content: center;
+  }
+
+  .navegador {
+    text-align: center;
+    width: 40vw;
+    height: 64px;
+    align-content: center;
+  }
+
+  .study-group {
+    height: 473px;
+    padding: 24px 32px;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .text h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    overflow: hidden;
+  }
+
+  .ilustration {
+    max-width: 378px;
+    max-height: 252px;
+  }
+
+  .just-chillin {
+    height: 507px;
+    padding: 24px 32px;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .coach {
+    height: 507px;
+    padding: 24px 32px;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .coach p {
+    overflow: hidden;
+  }
+
+  .last {
+    height: 560px;
+    padding: 38px 24px;
+  }
+
+  .text-last h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 90vw;
+  }
+
+  .text-last p {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 1110px) and (max-width: 1300px) {
+  header {
+    height: 428px;
+    padding: 48px 222px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+  }
+
+  header h1 {
+    width: 378px;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: center;
+  }
+
+  header p,
+  header a {
+    text-align: center;
+  }
+
+  .downloads {
+    flex-direction: column;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .windows {
+    text-align: center;
+    width: 30vw;
+    align-content: center;
+  }
+
+  .navegador {
+    text-align: center;
+    width: 30vw;
+    align-content: center;
+  }
+
+  .study-group {
+    height: 473px;
+    padding: 24px 32px;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .text h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    overflow: hidden;
+  }
+
+  .ilustration {
+    flex-basis: 400px;
+  }
+
+  .just-chillin {
+    height: 507px;
+    padding: 24px 32px;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .coach {
+    height: 507px;
+    padding: 24px 32px;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .coach p {
+    overflow: hidden;
+  }
+
+  .last {
+    height: 560px;
+    padding: 38px 24px;
+  }
+
+  .text-last h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 90vw;
+  }
+
+  .text-last p {
+    width: 90vw;
+    overflow: hidden;
+  }
+}
